@@ -25,7 +25,7 @@ transform_image = transforms.Compose([transforms.ToTensor(),
 
 
 def transform_img(file):
-    img = Image.open(file)
+    img = Image.open(file).convert('RGB')
     img_t = transform_image(img)
     arr = feat_extractor(img_t.unsqueeze(0).to(device))
     arr = torch.reshape(arr, (1, 512))
