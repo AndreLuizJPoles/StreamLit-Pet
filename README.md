@@ -37,9 +37,6 @@ Tudo em tempo real pela interface web criada com **Streamlit**.
 
 ---
 
-
----
-
 ## 🧠 Como é feita a classificação
 
 1. O usuário envia uma imagem
